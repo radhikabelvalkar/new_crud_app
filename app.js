@@ -29,6 +29,7 @@ mongoose.connect('mongodb://127.0.0.1:27017/angular_crud', { useNewUrlParser: tr
 })
 
 app.use('/', indexRouter);
+app.use('/', require('./routes/products'));
 app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
