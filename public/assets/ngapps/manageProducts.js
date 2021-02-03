@@ -102,6 +102,7 @@ app.controller('productModalController', ['$scope', '$http', 'record', '$window'
 
     //Method to edit product
     $scope.editProduct = function () {
+        
         $http.put('/editProduct/' + $scope.newProduct._id, $scope.newProduct).then((res) => {
             console.log(res)
             $scope.products[$scope.newProduct.index] = res.data;
