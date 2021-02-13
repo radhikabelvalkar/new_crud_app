@@ -21,7 +21,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 //Database Connection Code
-mongoose.connect('mongodb://127.0.0.1:27017/angular_crud', { useNewUrlParser: true, useUnifiedTopology: true }, (err) => {
+mongoose.connect("mongodb+srv://root:root@cluster0.4h8yu.mongodb.net/newdb?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true }, (err) => {
   if (err)
     throw err;
   else

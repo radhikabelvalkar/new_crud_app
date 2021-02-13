@@ -16,6 +16,9 @@
     "morgan": "~1.9.1"
   },
   "nodemonConfig": {
-    "ignore": ["public/", "views/"]
+    "ignore": [
+      "public/",
+      "views/"
+    ]
   }
 }
